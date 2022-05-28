@@ -34,9 +34,7 @@ public class InfoService {
    private static String generateId(String firstName, String lastName, int phoneNumber) {
 
         String value = String.valueOf(phoneNumber).substring(5,9);
-        String id = String.valueOf(firstName.charAt(0)).toUpperCase()
-                + String.valueOf(lastName.charAt(0)).toUpperCase()
-                + value;
+        String id = String.valueOf(firstName.charAt(0)).toUpperCase() + String.valueOf(lastName.charAt(0)).toUpperCase() + value;
         return id;
     }
 }
